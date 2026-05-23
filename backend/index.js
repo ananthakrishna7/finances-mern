@@ -1,6 +1,7 @@
 // server/index.js
 const express = require("express");
 const mongoose = require("mongoose");
+const redisClient = require('./config/redis'); 
 const path = require("path");
 require("dotenv").config({ path: path.resolve(__dirname, "../.env") });
 
